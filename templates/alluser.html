@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>420借贷</title>
+</head>
+<body>
+    {% for user in users %}
+        姓名：{{ user.u_name }}
+        密码：{{ user.u_password }}
+        <br>
+    {% endfor %}
+----------------------------------
+    <a href="/uauth/regist">注册</a>
+    <a href="/uauth/login">登录</a>
+</body>
+</html>
